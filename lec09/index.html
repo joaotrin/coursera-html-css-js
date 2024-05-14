@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>links</title>
+</head>
+<body>
+    <h1>links</h1>
+
+    <section id="sect0">
+        <h2>links to sections of the same page</h2>
+        <ul>
+            <li><a href="#section1">section 1</a></li>
+            <li><a href="#section2">section 2</a></li>
+            <li><a href="#footer">bottom of page (footer)</a></li>
+        </ul>
+    </section>
+
+    <section id="section1">
+        <h2>internal links</h2>
+        a file can be linked to the same dir as this html page:
+        <a href="same-dir.html" title="same dir link">
+            link to a file in the same dir
+        </a>
+        <a href="same-dir.html" title="same dir link">
+            <div>div linking to file in the same dir: displayed in its own line</div>
+        </a>
+    </section>
+    
+    <section id="section2">
+        <h2>external links</h2>
+        <p>
+            link to an existing web page:
+            <a href="http://www.google.com" target="_blank" title="google home page">
+                google home page
+            </a>
+        </p>
+        <p>obs: the "target" attribute forces the linked page to be opened in a new tab (useful to not leave the parent page completely)</p>
+    </section>
+
+    <footer id="footer">
+        <p><a href="#">&UpArrow; back to top &UpArrow;</a></p>
+        <p>obs: href="#" is already preset to the top of the page</p>
+    </footer>
+</body>
+</html>
