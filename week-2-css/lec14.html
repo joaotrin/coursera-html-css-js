@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>combining selectors</title>
+    <style>
+
+        /* element AND class */
+        p.big {
+            font-size: 20px;
+        }
+
+        /* child selector */
+        article > p {
+            color: blue;
+        }
+
+        /* descendant selector */
+        div span {
+            color: red;
+        }
+
+        .color1stHeaders h1 {
+            color: green;
+        }
+
+        div.beBlue p {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="big">paragraph</p>
+    <p>paragraph</p>
+    <div class="big">division</div>
+
+    <hr>
+
+    <article>
+        <p>article > paragraph</p>
+    </article>
+    <article>
+        <div>
+            <p>article > division > paragraph</p>
+        </div>
+    </article>
+
+    <hr>
+
+    <span>span</span>
+    <div>
+        <p>
+            <span>div > p > span</span>
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="color1stHeaders">
+        <h1>header 1</h1>
+        <h2>header 2</h2>
+        <h3>header 3</h3>
+    </div>
+
+    <hr>
+
+    <div class="beBlue">
+        <p>okay!</p>
+    </div>
+    <div>
+        <p>okay!</p>
+    </div>
+    <div class="beBlue">
+        <h3>okay!</h3>
+    </div>
+
+</body>
+</html>
