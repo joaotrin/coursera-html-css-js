@@ -5,47 +5,70 @@
     <title>pseudo selectors</title>
     <style>
 
-        h1 {
-            color: green;
-            font-size: 36px;
+        header li {
+            list-style: none;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+            background-color: greenyellow;
+            border: 1px solid blue;
+            color: black;
+            display: block;
+            width: 75px;
             text-align: center;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+        a:hover, a:active {
+            background-color: pink;
+            color: blue;
+        }
+
+        header li:nth-child(3) {
+            font-weight: bold;
+        }
+
+        .noBullet li {
+            list-style: none;
         }
         
-        p {
-            color: blue;
-            font-size: 20px;
-            width: 500px;
+        #p-list li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        #p-list li p:hover {
+            background-color: lightgreen;
         }
 
     </style>
 </head>
 <body>
-
-    <h1>main heading</h1>
     
     <header>
         <ul>
-            <li><a href="/" target="_blank">home</a></li>
-            <li><a href="google.com">google</a></li>
+            <li><a href="/site/index.html" target="_blank">home</a></li>
+            <li><a href="https://google.com" target="_blank">google</a></li>
+            <li><a href="https://coursera.org" target="_blank">coursera</a></li>
         </ul>
     </header>
     
-    <h2>subheading 1</h2>
-
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis eros dolor.
-    </p>
-
-    <h2>subheading 2</h2>
-    
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis eros dolor.
-        Nunc nec facilisis leo, sit amet semper erat. Praesent pharetra sem bibendum dolor facilisis blandit.
-        Curabitur pharetra dictum sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Proin bibendum molestie sagittis. Sed congue, leo at condimentum efficitur, tellus risus pulvinar
-        libero, dapibus viverra est velit non ante. Curabitur porta, magna non placerat accumsan, ipsum odio
-        luctus neque, nec lobortis urna tortor a neque. Suspendisse sed nisi quis turpis ultrices vestibulum.
-    </p>
+    <br>
+    <div>
+        <h2>paragraphs list</h2>
+        <ul id="p-list" class="noBullet">
+            <li><p>number 1</p></li>
+            <li><p>number 2</p></li>
+            <li><p>number 3</p></li>
+            <li><p>number 4</p></li>
+            <li><p>number 5</p></li>
+            <li><p>number 6</p></li>
+            <li><p>number 7</p></li>
+            <li><p>number 8</p></li>
+            <li><p>number 9</p></li>
+        </ul>
+    </div>
 
 </body>
 </html>
