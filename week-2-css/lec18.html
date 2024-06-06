@@ -7,13 +7,16 @@
         body {
             background-color: beige;
         }
-        .styled {
+        p.styled {
             color: #f34289;
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 20px; /* this is ABSOLUTE size */
             text-transform: lowercase;
+        }
+        p.bigger-font {
+            font-size: 120%; /* this is RELATIVE size */
         }
     </style>
 </head>
@@ -25,6 +28,33 @@
             Vestibulum non ex in nulla lacinia facilisis in id leo.
             Aliquam faucibus quam arcu, eget vulputate enim vestibulum eu.
         </p>
+        <p class="bigger-font">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vestibulum non ex in nulla lacinia facilisis in id leo.
+            Aliquam faucibus quam arcu, eget vulputate enim vestibulum eu.
+        </p>
+    </div>
+    <hr>
+    <div>
+        <p>regular text</p>
+        <!-- relative sizing DOESN'T OVERWRITE sizings stated earlier, IT ADDS UP! -->
+        <p style="font-size: 2em;">2em text</p>
+        <p style="font-size: 3em;">3em text</p>
+        <p style="font-size: 4em;">4em text</p>
+        <p style="font-size: 2em;">2em text again</p>
+    </div>
+    <hr>
+    <div>
+        regular div
+        <div style="font-size: 2em;">
+            2em div
+            <div style="font-size: 2em;">
+                4em div (just the 2em with 2em again)
+                <div style="font-size: .25em;">
+                    back to 1em (with .25em)
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
