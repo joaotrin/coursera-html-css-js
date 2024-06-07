@@ -11,11 +11,33 @@
     
     <div id="box">
         <div id="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vestibulum non ex in nulla lacinia facilisis in id leo.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Vestibulum non ex in nulla lacinia facilisis in id leo.<br>
             Aliquam faucibus quam arcu, eget vulputate enim vestibulum eu.
         </div>
     </div>
-    
+
+    <div id="comp-div">
+        <div id="top-div">
+            margin-bottom: 30px;<br>
+            the distance between this div and the one on the bottom is going to be only
+            <span style="font-weight: bold; text-decoration: underline;">30px</span> because<br>
+            <span style="text-transform: uppercase;">top and bottom margins collapse</span>
+        </div>
+        <div id="bottom-div">
+            margin-top: 20px;<br>
+            (the margins of divs next to each other don't collapse, though. they ADD UP)
+        </div>
+    </div>
+
+    <div class="side-container">
+        <div id="left-div">
+            left-div
+        </div>
+        <div id="right-div">
+            right-div
+        </div>
+    </div>
+
 </body>
 </html>
