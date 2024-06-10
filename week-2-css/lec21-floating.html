@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>floating</title>
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 3rem 4rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div {
+            margin: 2rem 0;
+        }
+
+        h1 {
+            margin-bottom: 2.5rem;
+        }
+
+        #upper-div {
+            background-color: #99e7e7;
+            padding: 15px;
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p.first {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 15px 0;
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            float: left;
+            margin: 0 15px 0 0;
+        }
+        
+        #p1 {
+            background-color: #A52A2A;
+        }
+        #p2 {
+            background-color: #DEB887;
+        }
+        #p3 {
+            background-color: #5F9EA0;
+        }
+        #p4 {
+            background-color: #FF7F50;
+        }
+
+        section {
+            clear: both;
+            padding-top: 1rem;
+        }
+
+        #lower-div {
+            background-color: #99e7e7;
+            height: fit-content;
+        }
+
+        .lower-ps {
+            width: 50%;
+            float: left;
+            padding: 20px;
+        }
+
+        #lowest-p {
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Floating Elements</h1>
+
+    <div id="upper-div">
+        <p id="p1" class="first">1</p>
+        <p id="p2" class="first">2</p>
+        <p id="p3" class="first">3</p>
+        <p id="p4" class="first">4</p>
+        <section>This is regular content continuing after the the paragraph boxes.</section>
+    </div>
+
+    <div id="lower-div">
+        <p class="lower-ps">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla quis eros dolor.
+            Nunc nec facilisis leo, sit amet semper erat.
+            Praesent pharetra sem bibendum dolor facilisis blandit.
+            Curabitur pharetra dictum sollicitudin.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Proin bibendum molestie sagittis.
+        </p>
+        <p class="lower-ps">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla quis eros dolor.
+            Nunc nec facilisis leo, sit amet semper erat.
+            Praesent pharetra sem bibendum dolor facilisis blandit.
+        </p>
+        <p id="lowest-p"></p>
+    </div>
+
+
+</body>
+</html>
